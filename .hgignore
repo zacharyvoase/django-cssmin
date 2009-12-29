@@ -1,0 +1,13 @@
+syntax: glob
+
+*.egg-info
+*.pyc
+*.pyo
+.DS_Store
+MANIFEST
+build
+dist
+doc/.html
+doc/.tmp
+test/example/dev.db
+test/example/media/css/*.min.css
