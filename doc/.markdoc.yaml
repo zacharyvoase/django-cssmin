@@ -1,0 +1,11 @@
+wiki-name: django-cssmin Documentation
+
+static-dir: ".static"
+wiki-dir: "."
+
+markdown:
+  extensions:
+    - codehilite
+    - def_list
+    - headerid
+
