@@ -89,7 +89,7 @@ def cssmin(args):
                 # The additional whitespace/comments will be filtered out by the
                 # compressor later on, unless we are in development mode, in
                 # which case we want the whitespace and comments.
-                input_io.write("/* FILE: %s */" % filename + os.linesep)
+                input_io.write("/* FILE: %s */" % filename + (os.linesep * 2))
                 input_io.write(utils.read_from(filename))
                 input_io.write(os.linesep * 2)
             input_io.seek(0)
