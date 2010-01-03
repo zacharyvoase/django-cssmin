@@ -32,15 +32,6 @@ if not hasattr(os.path, 'relpath'):
     os.path.relpath = relpath
 
 
-
-def compress(input_string):
-    """Use the YUI CSS compressor on a CSS string, returning a string."""
-    
-    pipe = subprocess.Popen(['yuicompressor', '--type', 'css'],
-                            stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-    return pipe.communicate(input_string)[0]
-
-
 def get_root(settings):
     """Get the directory from which to resolve the `CSSMIN_INPUT` globs."""
     
