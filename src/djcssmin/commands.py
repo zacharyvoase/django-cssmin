@@ -6,7 +6,7 @@ import logging
 import os
 import os.path as p
 
-import cssmin
+import cssmin as libcssmin
 from django.core.exceptions import ImproperlyConfigured
 from djboss.commands import *
 
@@ -104,7 +104,7 @@ def cssmin(args):
                 else:
                     # Minify and write the output.
                     LOG.info("Minifying and writing to %s" % p.relpath(output_file))
-                    output_io.write(cssmin.cssmin(input_io.read()))
+                    output_io.write(libcssmin.cssmin(input_io.read()))
             finally:
                 output_io.close() # Clean up.
         finally:
