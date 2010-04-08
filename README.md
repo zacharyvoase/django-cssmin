@@ -20,7 +20,6 @@ automatically [compress][] your CSS stylesheets.
 
 *   Install the `django-cssmin` library:
     
-        :::bash
         $ pip install django-cssmin # OR
         $ easy_install django-cssmin
     
@@ -30,7 +29,6 @@ automatically [compress][] your CSS stylesheets.
 
 *   Add the necessary settings to your `settings.py` file:
 
-        :::python
         ## somewhere in settings.py
         CSSMIN_ROOT = '/path/to/my/project/'
         
@@ -71,7 +69,6 @@ setuptools when you install `django-cssmin`.
 
 Usage is relatively simple:
 
-    :::bash
     $ djboss --log-level DEBUG cssmin --prod-mode
     Saving http://yui.yahooapis.com/.../reset.css to a temporary file
     Saved http://yui.yahooapis.com/.../reset.css to tmp8QRfOa
