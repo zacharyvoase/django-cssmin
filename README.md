@@ -1,5 +1,3 @@
-<!--*-markdown-*-->
-
 # `django-cssmin`
 
 `django-cssmin` is a reusable application for [Django][] which makes it easy to
@@ -50,7 +48,7 @@ automatically [compress][] your CSS stylesheets.
         CSSMIN_OUTPUT = 'media/css/style.min.css'
     
     More information on the available settings can be found
-    [here](http://bitbucket.org/zacharyvoase/django-cssmin/src/tip/doc/settings.md).
+    [here](http://github.com/zacharyvoase/django-cssmin/blob/master/doc/settings.md).
 
 
 ## `DEBUG` mode
@@ -69,7 +67,7 @@ see the output of `djboss cssmin --help` for more information.
 running Django management commands. This will be installed automatically by
 setuptools when you install `django-cssmin`.
 
-  [djboss]: http://bitbucket.org/zacharyvoase/django-boss
+  [djboss]: http://github.com/zacharyvoase/django-boss
 
 Usage is relatively simple:
 
